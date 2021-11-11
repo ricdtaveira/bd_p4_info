@@ -1,0 +1,17 @@
+{
+  "name": "testebd",
+  "version": "1.0.0",
+  "description": "Sprits de Teste do Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "knex": "^0.95.12",
+    "sqlite": "^4.0.23",
+    "sqlite3": "^5.0.2"
+  }
+}
