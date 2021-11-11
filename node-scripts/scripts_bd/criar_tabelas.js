@@ -1,3 +1,4 @@
+
 const sqlite3 = require('sqlite3');
 
 const db = new sqlite3.Database('./node-scripts/database/DB_PESSOAL_RH.db', (error) => {
