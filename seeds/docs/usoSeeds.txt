@@ -1,0 +1,42 @@
+## Similar a criação de Migrations a ferramenta seeds cria
+## arquivos que populam as tabelas de um banco de dados 
+## com registros.
+
+1) É necessário configurar o arquivo knexfile.js adicionando uma
+   propriedade chamada seeds que especifica o diretório seed.
+
+   Exemplo:
+
+   // knexfile.js
+
+   development: {
+
+     seeds: {
+       directory: './data/seeds'
+     }
+
+   }
+
+2) Similar a criação dos arquivos migrations o Knex possui uma ferramenta
+   para criar arquivos seed.
+   Os arquivos a serem criados devem seguir uma sequencia numerica para que as adicões
+   de registros sigam uma ordem cronologica.
+   No nosso caso a sequencia será:
+   npx knex seed:make 01-perfis
+   npx knex seed:make 02-usuarios
+   npx knex seed:make 03-usuarios_perfis
+
+3) Exemplo de um arquivo seed
+
+exports.seed = function(knex) {
+  // Deletes ALL existing entries
+  return knex('TB_PERFIS').del()
+    .then(function () {
+      // Inserts seed entries
+      return knex('TB_PERFIS').insert([
+        {id: 1, nome: 'comum', rotulo: 'Comum'},
+        {id: 2, nome: 'admin', rotulo: 'Administrador'},
+        {id: 3, nome: 'visitante', rotulo: 'Visitante'}
+      ]);
+    });
+};

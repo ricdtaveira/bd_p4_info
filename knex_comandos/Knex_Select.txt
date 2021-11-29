@@ -1,0 +1,15 @@
+Select *
+--------
+knex.select().from('books').timeout(1000) //define o tempo máximo de execução
+Outputs:                                  //se exceder o tempo máximo
+select * from `books`                     //levanta uma exceção de 
+                                          //TimeoutError
+knex.select().table('books')
+Outputs:
+select * from `books`
+
+Select ([*columns]) 
+-------------------
+knex.select('title', 'author', 'year').from('books')
+Outputs:
+select `title`, `author`, `year` from `books`
