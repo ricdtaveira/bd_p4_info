@@ -1,0 +1,22 @@
+knex.js
+https://knexjs.org/#changelog
+
+Database seeding with Knex
+https://dev.to/cesareferrari/database-seeding-with-knex-51gf
+
+Knex Setup Guide
+https://gist.github.com/NigelEarle/80150ff1c50031e59b872baf0e474977
+
+O guia completo para se conectar a um banco de dados em Node.js
+https://ichi.pro/pt/o-guia-completo-para-se-conectar-a-um-banco-de-dados-em-node-js-172040554503057
+
+Starting a Node Project From Scratch with SQLite3 Knex and Express
+https://medium.com/@MajikMan/starting-a-node-project-from-scratch-with-sqlite3-knex-and-express-fb4b765aca
+
+Knex cheatsheet
+https://devhints.io/knex
+
+
+
+
+

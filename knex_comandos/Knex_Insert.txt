@@ -1,5 +1,0 @@
-Insert
-// Returns [1] in "mysql", "sqlite", "oracle"; [] in "postgresql" unless the 'returning' parameter is set.
-knex('books').insert({title: 'Slaughterhouse Five'})
-Outputs:
-insert into `books` (`title`) values ('Slaughterhouse Five')

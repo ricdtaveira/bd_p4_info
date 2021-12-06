@@ -1,0 +1,2 @@
+Permite criar um alias para uma subconsulta, usando a string que você deseja nomear a consulta atual. 
+Se a consulta não for uma subconsulta, ela será ignorada.

@@ -1,3 +1,8 @@
+Cria uma consulta selecionada, recebendo uma matriz opcional de colunas para a consulta, 
+eventualmente assumindo o padrão de * se nenhuma for especificada quando a consulta for construída. 
+A resposta de uma chamada de seleção será resolvida com uma série de objetos selecionados no banco de dados.
+
+
 Select *
 --------
 knex.select().from('books').timeout(1000) //define o tempo máximo de execução

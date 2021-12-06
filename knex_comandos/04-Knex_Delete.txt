@@ -1,0 +1,13 @@
+del / delete
+
+Com o apelido de del porque delete é uma palavra reservada em JavaScript, esse método 
+exclui uma ou mais linhas, com base em outras condições especificadas na consulta.
+Resolve a promessa / cumpre o retorno de chamada com o número de linhas afetadas para a consulta.
+
+knex('accounts')
+  .where('activated', false)
+  .del()
+
+  
+Outputs:
+delete from `accounts` where `activated` = false
