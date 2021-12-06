@@ -1,0 +1,22 @@
+Roteiro para criação de uma app node usando sqlite3 e knex
+----------------------------------------------------------
+
+1) Criar um diretório usando mkdir
+   mkdir prova-aluno-x
+
+2) Entrar no diretório 
+   cd prova-aluno-x
+
+3) Criar o arquivo package.json
+   npm init -y
+
+4) Adicionar as dependencias ao projeto
+   npm i sqlite3 knex
+
+5) Observar o conteudo do arquivo package.json
+
+6) Criar o arquivo knexfile.js
+   npx knex init
+
+7) Usar o Knex para executar as funcionalidades de 
+   um CRUD(Insert, Select, Update e Del). 
