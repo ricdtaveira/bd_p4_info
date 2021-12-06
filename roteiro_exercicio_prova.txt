@@ -16,7 +16,7 @@ Roteiro para criação de uma app node usando sqlite3 e knex
 
 6) Observar o conteudo do arquivo package.json
 
-6) Criar o arquivo knexfile.js
+7) Criar o arquivo knexfile.js
    npx knex init
 
 8) Criar os migrations das tabelas
