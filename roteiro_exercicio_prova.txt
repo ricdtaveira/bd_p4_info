@@ -18,5 +18,9 @@ Roteiro para criação de uma app node usando sqlite3 e knex
 6) Criar o arquivo knexfile.js
    npx knex init
 
-7) Usar o Knex para executar as funcionalidades de 
+7) Criar os migrations das tabelas
+
+8) Criar os seeds das tabelas
+
+9) Usar o Knex para executar as funcionalidades de 
    um CRUD(Insert, Select, Update e Del). 
