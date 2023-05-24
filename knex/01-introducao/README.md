@@ -1,7 +1,6 @@
 # Introdução #
 >
-A instalação do Knex consiste na incoorporação de suas funcionalidades ao ambiente de execução do Knex
-do Node.js. 
+A instalação do Knex consiste na incorporação de suas funcionalidades ao ambiente de execução do Node.js. 
 >
 >
 Na instalação é usado o 'npm',o gerenciador de pacotes do Node.js.
