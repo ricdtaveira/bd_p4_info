@@ -20,6 +20,9 @@ Roteiro para criação de uma app node usando sqlite3 e knex
    npx knex init
 
 8) Criar os migrations das tabelas
+   knex migrate:make tb_cliente
+   knex migrate:make tb_vendedor
+   
 
 9) Criar os seeds das tabelas
 
