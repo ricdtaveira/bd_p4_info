@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "knex": "^2.0.0",
     "sqlite": "^4.0.23",
     "sqlite3": "^4.2.0"
   }

@@ -1,14 +1,14 @@
-Insert
+// Insert
 
-Cria uma consulta de inserção, obtendo um hash de propriedades a serem inseridas na linha 
-ou uma matriz de inserções, a serem executadas como um único comando de inserção. 
-Se a matriz de retorno for passada, por exemplo ['id', 'título'], ele resolve a promessa / 
-cumpre o retorno de chamada com um array de todas as linhas adicionadas com colunas especificadas. 
-É um atalho para retornar o método
+// Cria uma consulta de inserção, obtendo um hash de propriedades a serem inseridas na linha 
+// ou uma matriz de inserções, a serem executadas como um único comando de inserção. 
+// Se a matriz de retorno for passada, por exemplo ['id', 'título'], ele resolve a promessa / 
+// cumpre o retorno de chamada com um array de todas as linhas adicionadas com colunas especificadas. 
+// É um atalho para retornar o método
 
 
 // Returns [1] in "mysql", "sqlite", "oracle"; [] in "postgresql" unless the 'returning' parameter is set.
 knex('books').insert({title: 'Slaughterhouse Five'})
 
-Outputs:
-insert into `books` (`title`) values ('Slaughterhouse Five')
+// Outputs:
+// insert into `books` (`title`) values ('Slaughterhouse Five')

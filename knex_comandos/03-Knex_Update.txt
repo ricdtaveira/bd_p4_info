@@ -1,9 +1,9 @@
-Update
+// Update
 
-Cria uma consulta de atualização, tendo um hash de propriedades ou um par chave / valor a ser 
-atualizado com base nas outras restrições de consulta. Se a matriz de retorno for passada, 
-por exemplo ['id', 'title'], ele resolve a promessa / cumpre o retorno de chamada com um 
-array de todas as linhas atualizadas com colunas especificadas. É um atalho para retornar o método./data/seeds
+// Cria uma consulta de atualização, tendo um hash de propriedades ou um par chave / valor a ser 
+// atualizado com base nas outras restrições de consulta. Se a matriz de retorno for passada, 
+// por exemplo ['id', 'title'], ele resolve a promessa / cumpre o retorno de chamada com um 
+// array de todas as linhas atualizadas com colunas especificadas. É um atalho para retornar o método./data/seeds
 
 knex('books')
   .where('published_date', '<', 2000)
@@ -11,8 +11,8 @@ knex('books')
     status: 'archived',
     thisKeyIsSkipped: undefined
   })
-Outputs:
-update `books` set `status` = 'archived' where `published_date` < 2000
+// Outputs:
+// update `books` set `status` = 'archived' where `published_date` < 2000
 
 
 

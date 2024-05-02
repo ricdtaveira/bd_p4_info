@@ -1,8 +1,13 @@
 Uso dos Comandos de execução das Migrations
 ------------------------------------------
+Ler artigo em:
+
+https://materialpublic.imd.ufrn.br/curso/disciplina/3/77/9/7#:~:text=Migrations%20podem%20ser%20executadas%20para,(knex)%20%7B%20return%20knex.
 
 1) Evoluir o banco de dados (exports.up)
    -Incluir/alterar/excluir atributos 
+   
+   
 
 2) Retornar ou excluir alterações no banco de dados (exports.down)
    -Dropar uma tabela

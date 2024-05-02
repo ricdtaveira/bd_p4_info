@@ -1,27 +1,27 @@
-Cria uma consulta selecionada, recebendo uma matriz opcional de colunas para a consulta, 
-eventualmente assumindo o padrão de * se nenhuma for especificada quando a consulta for construída. 
-A resposta de uma chamada de seleção será resolvida com uma série de objetos selecionados no banco de dados.
+// Cria uma consulta selecionada, recebendo uma matriz opcional de colunas para a consulta, 
+// eventualmente assumindo o padrão de * se nenhuma for especificada quando a consulta for construída. 
+// A resposta de uma chamada de seleção será resolvida com uma série de objetos selecionados no banco de dados.
 
 
-Select *
---------
-knex.select().from('books').timeout(1000) //define o tempo máximo de execução
-Outputs:                                  //se exceder o tempo máximo
-select * from `books`                     //levanta uma exceção de 
-                                          //TimeoutError
+// Select *
+// --------
+knex.select().from('books').timeout(1000) //define o tempo máximo de execução  //se exceder o tempo máximo
+// Outputs:                                  // levanta uma exceção de TimeoutError
+// select * from `books`                     
+                                          
 knex.select().table('books')
-Outputs:
-select * from `books`
+// Outputs:
+// select * from `books`
 
-Select ([*columns]) 
--------------------
+// Select ([*columns]) 
+// -------------------
 knex.select('title', 'author', 'year').from('books')
-Outputs:
-select `title`, `author`, `year` from `books`
+// Outputs:
+// select `title`, `author`, `year` from `books`
 
 
 
-//Conexão
+// Conexão
 var knex = require('knex')({
 client: 'mysql',
   connection: {
